@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title> Age calculator app</title>
+</head>
+<body>
+
+<div class="calculator">
+    <!-- Aufgabe Feld -->
+    <form name="calculator" method="post">
+        <div class="calculatorInput">
+
+            <div class="birthday">
+                <label for="birthday"> day</label>
+                <input type="number" name="birthday" id="birthday"  required min="1" maxlength="2" placeholder="DD">
+                <span class="error-text"></span>
+            </div>
+
+            <div class="birthmonth">
+                <label for="birthmonth"> month</label>
+                <input type="number" name="birthmonth" id="birthmonth"  required min="1" max="12" maxlength="2" placeholder="MM">
+                <span class="error-text"></span>
+            </div>
+
+            <div class="birthyear">
+                <label for="birthyear"> year</label>
+                <input type="number" name="birthyear" id="birthyear" required maxlength="4" placeholder="YYYY">
+                <span class="error-text"></span>
+            </div>
+        </div>
+        <span class="error-text"></span>
+    </form>
+
+    <!-- Knopf -->
+    <div class='button-container'>
+        <div class="line"></div>
+        <button type="button" class="sub-button">
+            <img src="./assets/images/icon-arrow.svg" alt="icon-arrow">
+        </button>
+    </div>
+
+    <!-- Untere Feld -->
+    <div class="resultField">
+
+        <div class="years">
+            <span class="result-age-fields" id="r_one">--</span>
+            <span>years</span>
+        </div>
+        <div class="months">
+            <span class="result-age-fields" id="r_two">--</span>
+            <span>months</span>
+        </div>
+        <div class="days">
+            <span class="result-age-fields" id="r_three">--</span>
+            <span>days</span>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Javascript  -->
+<script src="/script.js"></script>
+
+</body>
+</html>
